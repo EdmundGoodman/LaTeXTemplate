@@ -1,0 +1,63 @@
+% Preamble =====================================================================
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[section]{placeins}
+\usepackage{enumitem}
+\usepackage{hologo}
+%\usepackage{minted}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=black
+}
+
+\newcommand{\latex}{\LaTeX\ }
+\newcommand{\bibtex}{\hologo{BibTeX}\ }
+
+
+
+% Document =====================================================================
+\begin{document}
+
+\begin{center}
+    \Huge\textbf{Project Name}\\
+    \huge\textit{Edmund Goodman}\\
+    \huge\textit{Date}
+\end{center}
+
+
+\addcontentsline{toc}{section}{Table of contents}
+\tableofcontents
+
+
+
+
+
+\section{Introduction}
+
+This is a template document for writeups using \latex, and \bibtex.
+
+
+
+
+\addcontentsline{toc}{section}{Bibliography}
+\bibliographystyle{unsrt}
+\bibliography{references.bib}
+
+\end{document}
